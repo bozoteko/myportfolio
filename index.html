@@ -120,26 +120,31 @@ footer p {
     box-shadow: 0 0 10px #6F42C1; /* Initial glow effect */
     animation: glowAnimation 2s infinite alternate; /* Animation to create the glowing effect */
 }
-
-/* Add this CSS in your <style> section */
-.social-icons {
+    .social-icons {
     text-align: center; /* Center the icons */
     margin-top: 20px; /* Add some space above the icons */
 }
 
-.social-icons a {
-    display: inline-block; /* Display the icons in a row */
-    margin: 0 10px; /* Add some spacing between icons */
+.social-icon {
+    display: inline-block; /* Display the icon and text in a row */
+    margin: 0 20px; /* Add some spacing between icons */
+    text-align: center; /* Center the text below the icon */
+    width: 80px; /* Set a fixed width for each icon and text container */
 }
 
-.social-icons img {
-    width: 30px; /* Set the width of the icons */
-    height: 30px; /* Set the height of the icons */
+.social-icon img {
+    width: 50px; /* Set the width of the icons */
+    height: 40px; /* Set the height of the icons */
     opacity: 0.7; /* Reduce the opacity of the icons */
     transition: opacity 0.3s; /* Add a smooth transition on hover */
 }
 
-.social-icons img:hover {
+.social-icon p {
+    margin: 5px 0 0; /* Add some margin above the text */
+    font-size: 14px; /* Adjust font size as needed */
+}
+
+.social-icon:hover img {
     opacity: 1; /* Increase opacity on hover */
 }
 
@@ -164,13 +169,18 @@ footer p {
             </div>
         </div>
     </section>
-                <div class="social-icons">
-                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-                    <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
-                    <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-                </div>
-            </div>
+    <div class="social-icons">
+        <div class="social-icon">
+            <p></p>
         </div>
+        <div class="social-icon">
+            <a href="#"><img src="discord.png" alt="Discord"></a>
+            <p>Discord</p>
+        </div>
+        <div class="social-icon">
+            <p></p>
+        </div>
+    </div>
     <section id="projects">
         <div class="container">
             <h2>Projects</h2>
